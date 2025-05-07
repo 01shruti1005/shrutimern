@@ -151,4 +151,4 @@
     -`git branch -D <branchName>` ---Delete a local branch
     -`git branch` ---List of available branches
     -`git checkout <branchName>` ---switch to existing branch
-  
+    
