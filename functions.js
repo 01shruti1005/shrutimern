@@ -9,5 +9,64 @@ const printTill10 = (i) => {
     }
 }
 
-printTill10 (1)
+//printTill10 (1)
+
+
+let cat = [
+    {
+           title: "Motors, tools and DIY",
+           children: [
+            { title: "Electric Bikes", children: null},
+            { title: "Standard Bikes", children: null},
+            { title: "Scooters", children: null},
+
+           ],
+    },
+];
+ let docData = [
+    {
+        title : "Chapter 1",
+        section: [
+            {
+                title : "Section 1.1",
+                section : [
+                    { title: "Section 1.1", section: null},
+                    { title: "Section 1.1.2", section: null},
+
+                ],
+
+            },
+            { 
+                title : "Section 1.2",
+                section : null,
+            },
+        ],
+    },
+
+    {
+        title : "Chapter 2",
+        section: [
+            {
+                title : "Section 2.1",
+                section : [
+                    { title: "Section 2.1", section: null},
+                    { title: "Section 2.1.2", section: null},
+
+                ],
+
+            },
+            { 
+                title : "Section 2.2",
+                section : null,
+            },
+        ],
+    },
+    
+  console.log (sec1.title)
+   
+        
+ ];
+
+
+
 
