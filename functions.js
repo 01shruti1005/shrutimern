@@ -23,50 +23,63 @@ let cat = [
            ],
     },
 ];
- let docData = [
+let dotData =[
     {
-        title : "Chapter 1",
-        section: [
+        title:"Chapter 1",
+        section:[
             {
-                title : "Section 1.1",
-                section : [
-                    { title: "Section 1.1", section: null},
-                    { title: "Section 1.1.2", section: null},
-
-                ],
-
-            },
-            { 
-                title : "Section 1.2",
-                section : null,
-            },
-        ],
+                title:"Section 1.1",
+                section: [
+                    {title: "Section 1.1.1", section:null},
+                    {title: "Section 1.1.2", section: null},
+                    {title: "Section 1.1.3", section: null}
+                ]
+            }
+        ]
     },
-
     {
-        title : "Chapter 2",
-        section: [
+        title:"Chapter 2",
+        section:[
             {
-                title : "Section 2.1",
-                section : [
-                    { title: "Section 2.1", section: null},
-                    { title: "Section 2.1.2", section: null},
-
-                ],
-
-            },
-            { 
-                title : "Section 2.2",
-                section : null,
-            },
-        ],
+                title:"Section 2.1",
+                section: null
+            }
+        ]
     },
-    
-  console.log (sec1.title)
-   
-        
- ];
+    {
+        title:"Chapter 3",
+        section:[
+            {
+                title:"Section 3.1",
+                section: [
+                    {title: "Section 3.1.1", section: null}
+                ]
+            },
+            {
+                title:"Section 3.2", section: null
+            },
+            {
+                title:"Section 3.2",section: [
+                    {title:"Section 3.2.1", section: null}
+                ]
+            }
+        ]
+    }
+]
 
+const printSec =(secdata , indent =1)=>{
+    if(secdata){
+        for (let data of secdata){
+            console.log('\t'.repeat(indent),data.title)
+            printSec(data.section, indent+1);
+        }
+    }
+}
+
+for(let sec1 of dotData){
+    console.log(sec1.title);
+    printSec(sec1.section);
+}
 
 
 
